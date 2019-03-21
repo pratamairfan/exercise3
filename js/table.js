@@ -261,18 +261,18 @@ function find() {
             }
         }
     }
+
 }
 
 function find1() {
-    var input, filter, table, tr, td, i;
-    input = document.getElementById("rotation_period");
-    filter = input.value.toUpperCase();
+    var input, table, tr, td, i;
+    input = document.getElementById("rotation_period").value;
     table = document.getElementById("is-table");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[1];
         if (td) {
-            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            if (td.innerHTML.indexOf(input) > -1) {
                 tr[i].style.display = "";
             } else {
                 tr[i].style.display = "none";
@@ -282,15 +282,14 @@ function find1() {
 }
 
 function find2() {
-    var input, filter, table, tr, td, i;
-    input = document.getElementById("orbital_period");
-    filter = input.value.toUpperCase();
+    var input, table, tr, td, i;
+    input = document.getElementById("orbital_period").value;
     table = document.getElementById("is-table");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[2];
         if (td) {
-            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            if (td.innerHTML.indexOf(input) > -1) {
                 tr[i].style.display = "";
             } else {
                 tr[i].style.display = "none";
@@ -300,15 +299,14 @@ function find2() {
 }
 
 function find3() {
-    var input, filter, table, tr, td, i;
-    input = document.getElementById("diameter");
-    filter = input.value.toUpperCase();
+    var input, table, tr, td, i;
+    input = document.getElementById("diameter").value;
     table = document.getElementById("is-table");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[3];
         if (td) {
-            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            if (td.innerHTML.indexOf(input) > -1) {
                 tr[i].style.display = "";
             } else {
                 tr[i].style.display = "none";
@@ -318,15 +316,14 @@ function find3() {
 }
 
 function find4() {
-    var input, filter, table, tr, td, i;
-    input = document.getElementById("climate");
-    filter = input.value.toUpperCase();
+    var input, table, tr, td, i;
+    input = document.getElementById("climate").value;
     table = document.getElementById("is-table");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[4];
         if (td) {
-            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            if (td.innerHTML.indexOf(input) > -1) {
                 tr[i].style.display = "";
             } else {
                 tr[i].style.display = "none";
@@ -334,3 +331,7 @@ function find4() {
         }
     }
 }
+
+    
+    
+    
