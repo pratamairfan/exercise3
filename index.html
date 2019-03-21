@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise-3</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <nav class="navbar is-warning is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#home" style="font-size:3rem">
+                    Exercise-3
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-full has-text-centered">
+                    <div class="box has-text-right">
+                        
+                        <h1 class="has-text-centered">Data Table</h1>
+                        <button class="button is-danger is-hovered" type="button" onclick="reset()">Reset table</button>
+                        <button class="button is-primary is-outlined" onclick="process()">Show All</button>
+                        <!-- <button class="button is-outlined is-primary" onclick="find()">Find</button> -->
+                        <div class="box" style="margin-top:2% ">
+                        <div class="columns">
+                            <table id="is-table" class="table is-fullwidth is-striped is-hoverable is-flex-mobile" style="margin: 2% 0">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Rotation Period</th>
+                                    <th>Orbital Period</th>
+                                    <th>Diameter</th>
+                                    <th>Climate</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="column is-one-fifth">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input id="name" onkeyup="find()" class="input" type="text" placeholder="Name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="column is-one-fifth">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input id="rotation_period" onkeyup="find1()" class="input" type="number"
+                                                        placeholder="Rotation Period">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="column is-one-fifth">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input id="orbital_period" onkeyup="find2()" class="input" type="number"
+                                                        placeholder="Orbital Period">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="column is-one-fifth">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input id="diameter" onkeyup="find3()" class="input" type="number"
+                                                        placeholder="Diameter">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="column is-one-fifth">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input id="climate" onkeyup="find4()" class="input" type="text" placeholder="Climate">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="result"></tbody>
+                            </table>
+                            </div>
+                        </div>
+                            <!-- <div id="result"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer is-dark navbar has-shadow">
+        <div class="container">
+            <p>&copy; Copyright 2019. Exercise-3</p>
+        </div>
+    </div>
+</body>
+<script src="js/table.js"></script>
+
+</html>
